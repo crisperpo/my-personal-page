@@ -1,0 +1,15 @@
+{
+    "title": "Cristina Restrepo",
+    "headlines": {
+        "dev": "Web Developer",
+        "openSourceFan": "Open Source Fan",
+        "globeTrotter": "Globe Trotter"
+    },
+    "social": {
+        "bluesky": {"icon": "bluesky","name": "Bluesky", "url": "https://bsky.app/profile/crisperpo.bsky.social"},
+        "github": {"icon": "github","name": "Github", "url": "https://github.com/crisperpo"},
+        "linkedin": {"icon": "linkedin","name": "Linkedin", "url": "https://linkedin.com/in/cristina-restrepo-lopez"},
+        "medium": {"icon": "medium","name": "Medium", "url": "https://medium.com/@cristinarestrepo"},
+        "pinterest": {"icon": "pinterest","name": "Pinterest", "url": "https://pinterest.com/crisperpo"}
+    }
+}
