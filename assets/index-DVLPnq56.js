@@ -61,7 +61,7 @@ Error generating stack: `+e.message+`
 `,Fh=na.div`
     display: flex;
     flex-direction: row;
-`,Ph=kh`
+`,La={link:"#CCCCCC",linkHover:"#999999",linkBorder:"#EEEEEE",linkBorderHover:"#BBBBBB",textBody:"#777777",title:{red:"#E21E25",purple:"#7251A2",green:"#BED431",blue:"#5ECAE6",orange:"#FE4419",yellow:"#F6C715",pink:"#F11AA8"}},Ph=kh`
     0% {
         top: 0;
     }
@@ -80,7 +80,7 @@ Error generating stack: `+e.message+`
     &:hovered {
         animation: ${Ph} 3s;
     }
-`,La={link:"#CCCCCC",linkHover:"#999999",linkBorder:"#EEEEEE",linkBorderHover:"#BBBBBB",textBody:"#777777",title:{red:"#E21E25",purple:"#7251A2",green:"#BED431",blue:"#5ECAE6",orange:"#FE4419",yellow:"#F6C715",pink:"#F11AA8"}},t6=({letter:c,position:f})=>{const[o,s]=el.useState(!1),g=el.useRef(null);el.useEffect(()=>{const b=()=>{s(!1)},N=g.current;return N&&N.addEventListener("animationend",b),()=>{N&&N.removeEventListener("animationend",b)}},[]);const T=Object.values(La.title),D=T[f%T.length],C=()=>{s(!0)},z=o?"letter hovered":"letter";return Dt.jsx(Ih,{className:z,color:D,onMouseEnter:C,onClick:C,ref:g,children:c})},l6=()=>Dt.jsx(Wh,{children:r0.title.split(" ").map((c,f)=>Dt.jsx(Fh,{children:c.split("").map((o,s)=>Dt.jsx(t6,{letter:o,position:s+f},s))},f))}),e6=()=>Dt.jsx("div",{children:r0.headlines.join(" · ")}),a6=na.div`
+`,t6=({letter:c,position:f})=>{const[o,s]=el.useState(!1),g=el.useRef(null);el.useEffect(()=>{const b=()=>{s(!1)},N=g.current;return N&&N.addEventListener("animationend",b),()=>{N&&N.removeEventListener("animationend",b)}},[]);const T=Object.values(La.title),D=T[f%T.length],C=()=>{s(!0)},z=o?"letter hovered":"letter";return Dt.jsx(Ih,{className:z,color:D,onMouseEnter:C,onClick:C,ref:g,children:c})},l6=()=>Dt.jsx(Wh,{children:r0.title.split(" ").map((c,f)=>Dt.jsx(Fh,{children:c.split("").map((o,s)=>Dt.jsx(t6,{letter:o,position:s+f},s))},f))}),e6=()=>Dt.jsx("div",{children:r0.headlines.join(" · ")}),a6=na.div`
     display: flex;
     gap: 1rem;
     justify-content: center;
