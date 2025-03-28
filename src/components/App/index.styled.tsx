@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import colors from '@/lib/constants/colors';
+
+import colors from '../../lib/constants/colors';
 
 const HeaderContainer = styled.div`
     align-items: center;
