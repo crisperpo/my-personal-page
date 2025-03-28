@@ -1,17 +1,9 @@
 //@ts-ignore
-import path from 'path';
 import { AliasOptions, defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-
-//@ts-ignore
-const root = path.resolve(__dirname, "src");
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias: {
-      "@": root,
-    } as AliasOptions,
-  },
+  plugins: [react(), tsconfigPaths()]
 })
