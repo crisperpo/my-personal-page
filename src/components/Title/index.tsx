@@ -1,4 +1,4 @@
-import content from '../../../lib/constants/content.json';
+import content from '../../lib/constants/content.json';
 import { TitleContainer, TitleLine } from './index.styled';
 import Letter from '../Letter';
 

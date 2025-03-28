@@ -1,8 +1,8 @@
 import React from 'react';
 
-import content from '../../../lib/constants/content.json';
+import content from '../../lib/constants/content.json';
 import { SocialContainer, SocialLink } from './index.styled';
-import Icons from '../../Icons';
+import Icons from '../Icons';
 
 import type { SocialIconName } from './index.d';
 
