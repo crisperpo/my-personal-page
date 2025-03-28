@@ -5,7 +5,6 @@ const SocialContainer = styled.div`
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-top: 1rem;
     width: 100%;
 `;
 
