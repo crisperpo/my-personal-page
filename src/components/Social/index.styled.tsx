@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import colors from '../../lib/constants/colors';
+import colors from '@/lib/constants/colors';
 
 const SocialContainer = styled.div`
     display: flex;

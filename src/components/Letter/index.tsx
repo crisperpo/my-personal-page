@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { LetterContainer } from './index.styled';
-import colors from '../../lib/constants/colors';
+import colors from '@/lib/constants/colors';
 import './index.css'
 
 const Letter = ({ letter, position }: { letter: string, position: number }) => {
@@ -10,13 +10,10 @@ const Letter = ({ letter, position }: { letter: string, position: number }) => {
         const handleAnimationEnd = () => {
             setIsHovered(false);
         };
-
         const letter = letterRef.current;
         if (letter) {
             letter.addEventListener('animationend', handleAnimationEnd);
         }
-
-        // Cleanup function
         return () => {
             if (letter) {
                 letter.removeEventListener('animationend', handleAnimationEnd);

@@ -1,13 +1,13 @@
-import content from '../../lib/constants/content.json';
+import content from '@/lib/constants/content.json';
 import { SocialContainer, SocialLink } from './index.styled';
-import Icons from '../Icons';
+import Icons from '@/components/Icons';
 
 import type { SocialIconName } from './index.d';
 
 const getSocialIcon = (iconName: SocialIconName) : JSX.Element => {
     const iconProps = {
         size: 32,
-        weight: 'fill'
+        weight: 'fill' as const
     };
     const socialIcons: Record<typeof iconName, JSX.Element> = {
         linkedin: <Icons.LinkedinIcon {...iconProps} />,
