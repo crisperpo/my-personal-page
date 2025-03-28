@@ -1,0 +1,24 @@
+.letter {
+    mix-blend-mode: color-burn;
+    position: relative;
+    transition: top ease 0.1s;
+    transition-delay: 2s;
+    transition: top ease 0.1s;
+    transition-delay: 2s;
+  
+    &.hovered {
+      animation: letterAnimation 3s;
+    }
+  }
+  @keyframes letterAnimation {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: 0.2em;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  

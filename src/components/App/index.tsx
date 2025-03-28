@@ -1,8 +1,8 @@
-import Title from '../Title/';
-import Headline from '../Headline/';
-import Social from '../Social/';
-import '../../styles/app.css';
+import Title from '@/components/Title/';
+import Headline from '@/components/Headline/';
+import Social from '@/components/Social/';
 import { HeaderContainer } from './index.styled';
+import '@/styles/app.css';
 
 const App = () => (
   <>
