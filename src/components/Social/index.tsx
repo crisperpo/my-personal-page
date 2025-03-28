@@ -1,15 +1,17 @@
+import React from 'react';
+
 import content from '@/lib/constants/content.json';
 import { SocialContainer, SocialLink } from './index.styled';
 import Icons from '@/components/Icons';
 
 import type { SocialIconName } from './index.d';
 
-const getSocialIcon = (iconName: SocialIconName) : JSX.Element => {
+const getSocialIcon = (iconName: SocialIconName): React.ReactElement => {
     const iconProps = {
         size: 32,
         weight: 'fill' as const
     };
-    const socialIcons: Record<typeof iconName, JSX.Element> = {
+    const socialIcons: Record<SocialIconName, React.ReactElement> = {
         linkedin: <Icons.LinkedinIcon {...iconProps} />,
         github: <Icons.GithubIcon {...iconProps} />,
         bluesky: <Icons.BlueskyIcon {...iconProps} />,
