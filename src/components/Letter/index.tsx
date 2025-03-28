@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
+
+import colors from '../../lib/constants/colors';
 import { LetterContainer } from './index.styled';
-import colors from '@/lib/constants/colors';
 import './index.css'
 
 const Letter = ({ letter, position }: { letter: string, position: number }) => {
