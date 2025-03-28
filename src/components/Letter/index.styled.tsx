@@ -1,18 +1,27 @@
-import styled from 'styled-components';
-import colors from '../../lib/constants/colors';
+import styled, { keyframes } from 'styled-components';
 
-const StyledLetterContainer = styled.div<{ color: string }>`
-    color: ${(props) => props.color};
-    mix-blend-mode: color-burn;
+const letterAnimation = keyframes`
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 0.2em;
+    }
+    100% {
+        top: 0;
+    }
 `;
 
-const LetterContainer = ({position, children}: {position: number; children: React.ReactNode}) => {
-    const colorKeys = Object.values(colors.title);
-    const color = colorKeys[position % colorKeys.length];
-    return (
-        <StyledLetterContainer color={color}>{children}</StyledLetterContainer>
-    );
-};
+const LetterContainer = styled.div<{ color: string }>`
+    color: ${(props) => props.color};
+    mix-blend-mode: color-burn;
+    transition: top ease 0.1s;
+    transition-delay: 2s;
+    position: relative;
+    &:hovered {
+        animation: ${letterAnimation} 3s;
+    }
+`;
 
 export {
     LetterContainer
