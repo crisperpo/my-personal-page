@@ -29,6 +29,10 @@ jobs:
             cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
+      - name: Set up environment variables
+        run: |
+          echo "VITE_API_KEY=${{ secrets.VITE_API_KEY }}" >> $GITHUB_ENV
+          echo "VITE_OTHER_KEY=${{ secrets.VITE_OTHER_KEY }}" >> $GITHUB_ENV
       - name: Build project
         run: pnpm run build
       - name: Upload production-ready build files
