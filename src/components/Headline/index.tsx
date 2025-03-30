@@ -1,9 +1,14 @@
-import content from '../../lib/constants/content.json';
+import { useContext } from 'react';
 
-const Headline = () => (
-    <div>
-        {content.headlines.join(' · ')}
-    </div>
-);
+import { AppContext } from '../../context/AppContext';
+
+const Headline = () => {
+    const { pageData } = useContext(AppContext) || {};
+    return (
+        <div>
+            {pageData?.headline.join(' · ')}
+        </div>
+    );
+};
 
 export default Headline;

@@ -1,8 +1,8 @@
-import React from 'react';
+import React,{ useContext } from 'react';
 
-import content from '../../lib/constants/content.json';
 import { SocialContainer, SocialLink } from './index.styled';
 import Icons from '../Icons';
+import { AppContext } from '../../context/AppContext';
 
 import type { SocialIconName } from './index.d';
 
@@ -22,15 +22,17 @@ const getSocialIcon = (iconName: SocialIconName): React.ReactElement => {
 };
 
 const Social = () => {
+    const { pageData } = useContext(AppContext) || {};
+
     return (
         <SocialContainer>
-            {content.social.map((socialItem) => (
+            {pageData?.socialNetworks?.map((socialItem, indexSocialItem) => (
                 <SocialLink
-                    key={socialItem.name}
-                    href={socialItem.url}
+                    key={indexSocialItem}
+                    href={socialItem.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    title={socialItem.name}
+                    title={socialItem.label}
                 >
                     { getSocialIcon(socialItem.icon as SocialIconName) }
                 </SocialLink>

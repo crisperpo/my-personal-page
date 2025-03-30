@@ -11,6 +11,7 @@ import '../../styles/app.css';
 const App = () => {
   const [loading, setLoading] = useState(true);
   const appContext = useContext(AppContext);
+  
   const { setPageData } = appContext || {};
 
   useEffect(() => {
@@ -22,7 +23,7 @@ const App = () => {
     fetchData();
   }, [setLoading, setPageData]);
 
-  if (loading) {
+  if (loading || !appContext) {
     return <div>...</div>;
   }
 
