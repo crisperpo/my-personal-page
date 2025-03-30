@@ -17,7 +17,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchHomePageData();
-      setPageData && setPageData(data);
+      if(setPageData) setPageData(data);
       setLoading(false);
     };
     fetchData();
