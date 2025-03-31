@@ -4,15 +4,13 @@ export type SocialNetworksType = {
     link: string;
     sortIndex: number;
 };
-
+               
 export type PageDataType = {
     headline: string[];
     identifier: string;
+    socialNetworks: SocialNetworksType[];
     title: string;
-    socialNetworkCollection: {
-        items: socialNetworksType[];
-    };
-};
+}
 
 export interface AppContextType {
     theme: string;
