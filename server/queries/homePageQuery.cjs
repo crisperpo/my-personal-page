@@ -17,4 +17,4 @@ const homePageQuery = `
   }
 `;
 
-  export default homePageQuery;
+module.exports = homePageQuery;

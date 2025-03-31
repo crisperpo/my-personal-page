@@ -1,12 +1,14 @@
+export type SocialNetworksType = {
+    label: string;
+    icon: string;
+    link: string;
+    sortIndex: number;
+};
+               
 export type PageDataType = {
     headline: string[];
     identifier: string;
-    socialNetworks: {
-        label: string;
-        icon: string;
-        link: string;
-        sortIndex: number;
-    }[];
+    socialNetworks: SocialNetworksType[];
     title: string;
 }
 

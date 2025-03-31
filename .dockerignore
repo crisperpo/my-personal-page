@@ -1,0 +1,25 @@
+# Ignore node_modules folder
+node_modules
+
+# Ignore logs
+logs
+*.log
+npm-debug.log*
+
+# Ignore build output
+dist
+build
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore Docker files
+Dockerfile
+Dockerfile.*
+
+# Ignore miscellaneous
+*.swp
+*.swo
+*.DS_Store

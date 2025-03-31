@@ -1,31 +1,30 @@
-import { homePageQuery } from '../../queries';
+import apiClient from '../apiClient';
 
-import type { PageDataType } from '../../lib/types/types.d';
+import type { PageDataType, SocialNetworksType } from '../../lib/types/types.d';
 
-export default async () => {
-    const contentfulSpaceId = import.meta.env.VITE_SPACE_ID;
-    const contentfulAccessToken = import.meta.env.VITE_ACCESS_TOKEN;
-    const response = await fetch(
-        `https://graphql.contentful.com/content/v1/spaces/${contentfulSpaceId}/`,
-        {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${contentfulAccessToken}`,
-        },
-        body: JSON.stringify({ query: homePageQuery }),
-        }
-    );
-    
-    const { data, errors } = await response.json();
-    
-    if (errors) {
-        console.error(errors);
+export default async (): Promise<PageDataType> => {
+    const response = await apiClient.get('api/get-home-page-data');
+
+    if (response.status !== 200) {
+        throw new Error(`Failed to fetch data: ${response.statusText}`);
     }
-    return ({
-        ...data.pageCollection.items[0],
-        socialNetworks: [...data.socialNetworkCollection.items].sort(
-            (a, b) => a.sortIndex - b.sortIndex
+
+    const { data } = response;
+
+    if (!data?.pageCollection?.items?.length) {
+        throw new Error('No items found in pageCollection');
+    }
+
+    if (!data?.socialNetworkCollection?.items?.length) {
+        throw new Error('No items found in socialNetworkCollection');
+    }
+
+    const { pageCollection, socialNetworkCollection } = data;
+
+    return {
+        ...pageCollection.items[0],
+        socialNetworks: socialNetworkCollection.items.sort(
+            (a: SocialNetworksType , b: SocialNetworksType) => a.sortIndex - b.sortIndex
         ),
-    } as PageDataType);
+    } as PageDataType;
 };
