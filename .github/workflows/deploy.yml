@@ -31,8 +31,8 @@ jobs:
         run: pnpm install
       - name: Set up environment variables
         run: |
-          echo "VITE_SPACE_ID=${{ secrets.VITE_SPACE_ID }}" >> $GITHUB_ENV
-          echo "VITE_ACCESS_TOKEN=${{ secrets.VITE_ACCESS_TOKEN }}" >> $GITHUB_ENV
+          echo "CONTENTFUL_SPACE_ID=${{ secrets.CONTENTFUL_SPACE_ID }}" >> $GITHUB_ENV
+          echo "CONTENTFUL_ACCESS_TOKEN=${{ secrets.CONTENTFUL_ACCESS_TOKEN }}" >> $GITHUB_ENV
       - name: Build project
         run: pnpm run build
       - name: Upload production-ready build files
