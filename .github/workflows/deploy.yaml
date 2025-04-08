@@ -27,7 +27,7 @@ jobs:
           access_token: ${{ github.token }}
 
   build:
-    name: Build and env setup
+    name: Build and setup environment
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -116,7 +116,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: dist
           path: dist
