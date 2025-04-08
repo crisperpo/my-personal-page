@@ -1,0 +1,27 @@
+name: Deployment
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+        types:
+            - opened
+            - synchronize
+            - reopened
+
+permissions:
+    contents: write
+    issues: write
+
+jobs:
+    avoid-redundant-deploy:
+        name: Cancel pervious runs
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+            access_token: ${{ github.token }}
+        
+
+
