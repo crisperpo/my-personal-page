@@ -18,10 +18,13 @@ permissions:
 
 jobs:
     avoid-redundant-deploy:
-        name: Cancel previous runs
-        uses: styfle/cancel-workflow-action@0.9.1
-        with:
-            access_token: ${{ github.token }}
+        name: Avoid redundancy
+        runs-on: ubuntu-latest
+        steps:
+          - name: Cancel previous runs
+            uses: styfle/cancel-workflow-action@0.9.1
+            with:
+              access_token: ${{ github.token }}
     setup:
         name: Installation and env setup
         runs-on: ubuntu-latest
