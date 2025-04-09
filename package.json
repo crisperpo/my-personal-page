@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "start-server": "node server/index.cjs",
     "test": "pnpm --silent test:unit",
-    "test:unit": "vitest --passWithNoTests",
+    "test:unit": "vitest run --passWithNoTests",
+    "test:unit:watch": "vitest",
     "prepare": "husky"
   },
   "dependencies": {
