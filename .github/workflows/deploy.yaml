@@ -27,6 +27,7 @@ jobs:
           access_token: ${{ github.token }}
 
   build:
+    needs: [avoid-redundant-deploy]
     name: Build and setup environment
     runs-on: ubuntu-latest
     steps:
@@ -122,17 +123,3 @@ jobs:
       - name: Run tests
         run: pnpm run test
   
-  deploy:
-    needs: [test]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      - name: Copy files to droplet
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.SSH_HOST_DO }}
-          username: ${{ secrets.SSH_USERNAME_DO }}
-          key: ${{ secrets.SSH_KEY_DO }}
-          source: '.'
-          target: '/var/www/crispe2'
