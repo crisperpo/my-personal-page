@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { vi } from 'vitest';
 
-import mockContentfulData from './mockContentfulData';
+import mockContentfulData from './mockContentfulData.json';
 
 const { headline, socialNetworks, title } = mockContentfulData;
 
