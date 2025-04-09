@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 
 import colors from '../../lib/constants/colors';
 import { LetterContainer } from './index.styled';
-import './index.css'
+import './index.scss'
 
 const Letter = ({ letter, position }: { letter: string, position: number }) => {
     const [isHovered, setIsHovered] = useState(false);
