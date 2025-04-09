@@ -25,5 +25,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "server/queries"]
+  "include": ["src", "./src/test/setup.ts"]
 }

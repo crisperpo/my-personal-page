@@ -1,4 +1,6 @@
 /// <reference types="vitest/config" />
+/// <reference types="vitest" />
+/// <reference types="vite/client" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -7,6 +9,10 @@ export default defineConfig({
   base: './',
   plugins: [react()],
   test: {
-    include: ['**/*.{test,spec}.?(c|m)[jt]s?(x)']
+    css: true,
+    environment: 'jsdom',
+    globals: true,
+    include: ['**/*.{test,spec}.?(c|m)[jt]s?(x)'],
+    setupFiles: './src/test/setup.ts',
   },
 })
