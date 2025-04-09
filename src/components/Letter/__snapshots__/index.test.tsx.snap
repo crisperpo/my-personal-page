@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Letter Component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-VHjGu dOZwNA letter hovered"
+    color="#E21E25"
+  >
+    A
+  </div>
+</DocumentFragment>
+`;
