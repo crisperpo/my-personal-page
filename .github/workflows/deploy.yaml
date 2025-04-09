@@ -64,7 +64,6 @@ jobs:
 
   lint:
     name: Lint code
-    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -92,7 +91,7 @@ jobs:
 
   test:
     name: Run unit tests
-    needs: [build]
+    needs: [lint, build]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -122,3 +121,18 @@ jobs:
           path: dist
       - name: Run tests
         run: pnpm run test
+  
+  deploy:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Copy files to droplet
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST_DO }}
+          username: ${{ secrets.SSH_USERNAME_DO }}
+          key: ${{ secrets.SSH_KEY_DO }}
+          source: '.'
+          target: '/var/www/crispe2'
