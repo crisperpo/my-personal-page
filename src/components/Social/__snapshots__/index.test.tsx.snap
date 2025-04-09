@@ -1,0 +1,111 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Social Component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-VHjGu kRPcpR"
+  >
+    <a
+      class="sc-gnOvAp dvWhBs"
+      href="https://pinterest.com/crisperpo"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Pinterest"
+    >
+      <svg
+        fill="currentColor"
+        height="32"
+        viewBox="0 0 256 256"
+        width="32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M240,128.7c-.38,56.49-46.46,102.73-102.94,103.29a104.16,104.16,0,0,1-25.94-3,4,4,0,0,1-2.91-4.86l8.64-34.55A60.57,60.57,0,0,0,144,196c37,0,66.7-33.45,63.81-73.36A72,72,0,1,0,69.24,155,8,8,0,0,0,80,159.29a8.19,8.19,0,0,0,4-10.49,56,56,0,1,1,107.86-24.93C194,154.4,171.73,180,144,180a44.87,44.87,0,0,1-23.14-6.44l14.9-59.62a8,8,0,0,0-15.52-3.88L93.38,217.51a4,4,0,0,1-5.71,2.59A104,104,0,0,1,32,126.88C32.6,70.52,78.67,24.52,135,24A104,104,0,0,1,240,128.7Z"
+        />
+      </svg>
+    </a>
+    <a
+      class="sc-gnOvAp dvWhBs"
+      href="https://medium.com/@cristinarestrepo"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Medium"
+    >
+      <svg
+        fill="currentColor"
+        height="32"
+        viewBox="0 0 256 256"
+        width="32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M136,128A64,64,0,1,1,72,64,64.07,64.07,0,0,1,136,128Zm48-64c-5.68,0-16.4,2.76-24.32,21.25C154.73,96.8,152,112,152,128s2.73,31.2,7.68,42.75C167.6,189.24,178.32,192,184,192s16.4-2.76,24.32-21.25C213.27,159.2,216,144,216,128s-2.73-31.2-7.68-42.75C200.4,66.76,189.68,64,184,64Zm56,0a8,8,0,0,0-8,8V184a8,8,0,0,0,16,0V72A8,8,0,0,0,240,64Z"
+        />
+      </svg>
+    </a>
+    <a
+      class="sc-gnOvAp dvWhBs"
+      href="https://linkedin.com/in/cristina-restrepo-lopez"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Linkedin"
+    >
+      <svg
+        fill="currentColor"
+        height="32"
+        viewBox="0 0 256 256"
+        width="32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"
+        />
+      </svg>
+    </a>
+    <a
+      class="sc-gnOvAp dvWhBs"
+      href="https://github.com/crisperpo"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Github"
+    >
+      <svg
+        fill="currentColor"
+        height="32"
+        viewBox="0 0 256 256"
+        width="32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M216,104v8a56.06,56.06,0,0,1-48.44,55.47A39.8,39.8,0,0,1,176,192v40a8,8,0,0,1-8,8H104a8,8,0,0,1-8-8V216H72a40,40,0,0,1-40-40A24,24,0,0,0,8,152a8,8,0,0,1,0-16,40,40,0,0,1,40,40,24,24,0,0,0,24,24H96v-8a39.8,39.8,0,0,1,8.44-24.53A56.06,56.06,0,0,1,56,112v-8a58.14,58.14,0,0,1,7.69-28.32A59.78,59.78,0,0,1,69.07,28,8,8,0,0,1,76,24a59.75,59.75,0,0,1,48,24h24a59.75,59.75,0,0,1,48-24,8,8,0,0,1,6.93,4,59.74,59.74,0,0,1,5.37,47.68A58,58,0,0,1,216,104Z"
+        />
+      </svg>
+    </a>
+    <a
+      class="sc-gnOvAp dvWhBs"
+      href="https://bsky.app/profile/crisperpo.bsky.social"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Bluesky"
+    >
+      <svg
+        fill="currentColor"
+        height="32"
+        viewBox="0 0 256 256"
+        width="32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <svg
+          fill="currentColor"
+          viewBox="0 0 600 530"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"
+          />
+        </svg>
+      </svg>
+    </a>
+  </div>
+</DocumentFragment>
+`;
