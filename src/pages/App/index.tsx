@@ -30,7 +30,7 @@ const App = () => {
   return (
     <>
       <HeaderContainer>
-        <Title />
+         <Title />
         <Headline />
         <Social />
       </HeaderContainer>

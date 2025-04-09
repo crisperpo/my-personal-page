@@ -1,0 +1,40 @@
+ {
+    "title": "Cristina Restrepo",
+    "headline": [
+        "Web Developer",
+        "Open Source Fan",
+        "Globe Trotter"
+    ],
+    "socialNetworks": [
+        {
+            "label": "Pinterest",
+            "icon": "pinterest",
+            "link": "https://pinterest.com/crisperpo",
+            "sortIndex": 4
+        },
+        {
+            "label": "Medium",
+            "icon": "medium",
+            "link": "https://medium.com/@cristinarestrepo",
+            "sortIndex": 5
+        },
+        {
+            "label": "Linkedin",
+            "icon": "linkedin",
+            "link": "https://linkedin.com/in/cristina-restrepo-lopez",
+            "sortIndex": 2
+        },
+        {
+            "label": "Github",
+            "icon": "github",
+            "link": "https://github.com/crisperpo",
+            "sortIndex": 1
+        },
+        {
+            "label": "Bluesky",
+            "icon": "bluesky",
+            "link": "https://bsky.app/profile/crisperpo.bsky.social",
+            "sortIndex": 3
+        }
+    ]
+ }   

@@ -1,0 +1,114 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Title Component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gnOvAp gVSouF"
+  >
+    <div
+      class="sc-dQkurY jNQekc"
+    >
+      <div
+        class="sc-VHjGu dOZwNA letter"
+        color="#E21E25"
+      >
+        C
+      </div>
+      <div
+        class="sc-VHjGu hFbNHm letter"
+        color="#7251A2"
+      >
+        r
+      </div>
+      <div
+        class="sc-VHjGu cAuorJ letter"
+        color="#BED431"
+      >
+        i
+      </div>
+      <div
+        class="sc-VHjGu jBwfFN letter"
+        color="#5ECAE6"
+      >
+        s
+      </div>
+      <div
+        class="sc-VHjGu fcpcnf letter"
+        color="#FE4419"
+      >
+        t
+      </div>
+      <div
+        class="sc-VHjGu fXDXMA letter"
+        color="#F6C715"
+      >
+        i
+      </div>
+      <div
+        class="sc-VHjGu gxdNjy letter"
+        color="#F11AA8"
+      >
+        n
+      </div>
+      <div
+        class="sc-VHjGu dOZwNA letter"
+        color="#E21E25"
+      >
+        a
+      </div>
+    </div>
+    <div
+      class="sc-dQkurY jNQekc"
+    >
+      <div
+        class="sc-VHjGu hFbNHm letter"
+        color="#7251A2"
+      >
+        R
+      </div>
+      <div
+        class="sc-VHjGu cAuorJ letter"
+        color="#BED431"
+      >
+        e
+      </div>
+      <div
+        class="sc-VHjGu jBwfFN letter"
+        color="#5ECAE6"
+      >
+        s
+      </div>
+      <div
+        class="sc-VHjGu fcpcnf letter"
+        color="#FE4419"
+      >
+        t
+      </div>
+      <div
+        class="sc-VHjGu fXDXMA letter"
+        color="#F6C715"
+      >
+        r
+      </div>
+      <div
+        class="sc-VHjGu gxdNjy letter"
+        color="#F11AA8"
+      >
+        e
+      </div>
+      <div
+        class="sc-VHjGu dOZwNA letter"
+        color="#E21E25"
+      >
+        p
+      </div>
+      <div
+        class="sc-VHjGu hFbNHm letter"
+        color="#7251A2"
+      >
+        o
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

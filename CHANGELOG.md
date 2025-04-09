@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+- Add unit tests
+- Add husky
+
 ## 1.1.0
 - Add tests and linter to CI
 - Divide workflow in jobs
