@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "start-server": "node server/index.cjs",
     "test": "pnpm --silent test:unit",
-    "test:unit": "vitest --passWithNoTests"
+    "test:unit": "vitest --passWithNoTests",
+    "prepare": "husky"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
@@ -37,6 +38,7 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
+    "husky": "^9.1.7",
     "jsdom": "^26.0.0",
     "path": "^0.12.7",
     "typescript": "~5.7.2",
