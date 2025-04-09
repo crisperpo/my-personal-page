@@ -27,7 +27,6 @@ jobs:
           access_token: ${{ github.token }}
 
   build:
-    needs: [avoid-redundant-deploy]
     name: Build and setup environment
     runs-on: ubuntu-latest
     steps:
