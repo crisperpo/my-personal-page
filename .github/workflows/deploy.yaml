@@ -121,4 +121,15 @@ jobs:
           path: dist
       - name: Run tests
         run: pnpm run test
-  
+
+  deploy:
+    name: Deploy to Render
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+        - name: Trigger backend deploy
+          run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_BACKEND }}
+        - name: Trigger frontend deploy
+          run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_FRONTEND }}
