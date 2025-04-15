@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.0
+- Add deployment to Render job to git actions
+
 ## 1.2.0
 - Add unit tests
 - Add husky
