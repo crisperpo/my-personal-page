@@ -138,14 +138,15 @@ jobs:
         working-directory: ${{ matrix.app }}
         run: pnpm run test
 
-#   deploy:
-#     name: Deploy to Vercel
-#     needs: [test]
-#     runs-on: ubuntu-latest
-#     steps:
-#         - name: Checkout repository
-#           uses: actions/checkout@v4
-#         - name: Trigger backend deploy
-#           run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_BACKEND }}
-#         - name: Trigger frontend deploy
-#           run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_FRONTEND }}
+  deploy:
+    name: Deploy
+    needs: [test]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [client, server]
+    steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+        - name: Install Vercel CLI
+          run: pnpm install --global vercel@canary
