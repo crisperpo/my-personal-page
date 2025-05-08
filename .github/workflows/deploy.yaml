@@ -61,6 +61,7 @@ jobs:
           echo "CONTENTFUL_SPACE_ID=${{ secrets.CONTENTFUL_SPACE_ID}}" >> $GITHUB_ENV
           echo "CONTENTFUL_ACCESS_TOKEN=${{ secrets.CONTENTFUL_ACCESS_TOKEN}}" >> $GITHUB_ENV
       - name: Build project
+        working-directory: ${{ matrix.app }}
         run: pnpm run build
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
