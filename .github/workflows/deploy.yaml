@@ -72,6 +72,9 @@ jobs:
   lint:
     name: Lint code
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [client, server]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
