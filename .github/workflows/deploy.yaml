@@ -94,8 +94,10 @@ jobs:
           node-version: ${{ steps.nvmrc.outputs.NVMRC}}
           cache: 'pnpm'
       - name: Install dependencies
+        working-directory: ${{ matrix.app }}
         run: pnpm install --frozen-lockfile
       - name: Lint code
+        working-directory: ${{ matrix.app }}
         run: pnpm run lint
 
 #   test:
