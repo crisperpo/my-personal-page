@@ -140,6 +140,7 @@ jobs:
 
   deploy:
     name: Deploy
+    if: github.ref == 'refs/heads/main'
     needs: [test]
     runs-on: ubuntu-latest
     strategy:
@@ -166,3 +167,16 @@ jobs:
             cache: 'pnpm'
         - name: Install Vercel CLI
           run: pnpm install --global vercel@canary
+        - name: Deploy to Vercel
+          working-directory: ${{ matrix.app }}
+          env:
+            VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+            VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+            VERCEL_PROJECT_ID: ${{ matrix.app == 'client' && secrets.VERCEL_PROJECT_ID_CLIENT || secrets.VERCEL_PROJECT_ID_SERVER }}
+          run: |
+            vercel deploy \
+              --prod \
+              --yes \
+              --token $VERCEL_TOKEN \
+              --org-id $VERCEL_ORG_ID \
+              --project-id $VERCEL_PROJECT_ID
