@@ -105,6 +105,9 @@ jobs:
     name: Run unit tests
     needs: [lint, build]
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [client, server]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -130,7 +133,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: dist
-          path: dist
+          path: ${{ matrix.app }}/dist
       - name: Run tests
         working-directory: ${{ matrix.app }}
         run: pnpm run test
