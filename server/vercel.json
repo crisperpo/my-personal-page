@@ -1,5 +1,7 @@
 {
     "version": 2,
+    "orgId": "crisperpos-projects",
+    "projectId": "prj_LkplWYph4QEdX5RLFMnJk5pztl3G",
     "builds": [
       { "src": "./index.cjs", "use": "@vercel/node" }
     ],
