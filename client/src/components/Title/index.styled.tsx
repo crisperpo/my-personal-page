@@ -5,6 +5,7 @@ const TitleContainer = styled.div`
     display: flex;
     font-family: 'Bebas Neue', sans-serif;
     flex-flow: column;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: calc(70px + 9vw);
     font-style: normal;
     font-weight: 400;
