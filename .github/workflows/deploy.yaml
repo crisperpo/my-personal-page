@@ -1,33 +1,33 @@
-# name: Deployment
+name: Deployment
 
-# on:
-#   push:
-#     branches:
-#       - main
-#   pull_request:
-#     branches:
-#       - main
-#     types:
-#       - opened
-#       - synchronize
-#       - reopened
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+      - reopened
 
-# permissions:
-#   contents: write
-#   issues: write
+permissions:
+  contents: write
+  issues: write
 
-# jobs:
-#   avoid-redundant-deploy:
-#     name: Avoid redundancy
-#     runs-on: ubuntu-latest
-#     strategy:
-#       matrix:
-#         app: [client, server]
-#     steps:
-#       - name: Cancel previous runs
-#         uses: styfle/cancel-workflow-action@0.9.1
-#         with:
-#           access_token: ${{ github.token }}
+jobs:
+  avoid-redundant-deploy:
+    name: Avoid redundancy
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [client, server]
+    steps:
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{ github.token }}
 
 #   build:
 #     name: Build and setup environment
