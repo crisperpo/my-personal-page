@@ -1,13 +1,12 @@
-import { useContext } from 'react';
-
-import { AppContext } from '../../context/AppContext';
+import usePageData from '../../hooks/usePageData';
+import { HeadlineContainer } from './index.styled';
 
 const Headline = () => {
-    const { pageData } = useContext(AppContext) || {};
+    const pageData = usePageData();
     return (
-        <div>
+        <HeadlineContainer>
             {pageData?.headline.join(' · ')}
-        </div>
+        </HeadlineContainer>
     );
 };
 

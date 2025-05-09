@@ -1,8 +1,8 @@
-import React,{ useContext } from 'react';
+import React from 'react';
 
 import { SocialContainer, SocialLink } from './index.styled';
 import Icons from '../Icons';
-import { AppContext } from '../../context/AppContext';
+import usePageData from '../../hooks/usePageData';
 
 import type { SocialIconName } from './index.d';
 
@@ -22,7 +22,7 @@ const getSocialIcon = (iconName: SocialIconName): React.ReactElement => {
 };
 
 const Social = () => {
-    const { pageData } = useContext(AppContext) || {};
+    const pageData = usePageData();
 
     return (
         <SocialContainer>
