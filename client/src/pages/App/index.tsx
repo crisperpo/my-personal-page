@@ -1,4 +1,5 @@
 import { useState, useEffect, useContext } from 'react';
+import { ThemeProvider } from 'styled-components';
 
 import fetchHomePageData from '../../services/fetchHomePageData';
 import Title from '../../components/Title/';
@@ -6,6 +7,7 @@ import Headline from '../../components/Headline/';
 import Social from '../../components/Social/';
 import { HeaderContainer } from './index.styled';
 import { AppContext } from '../../context/AppContext';
+import theme from '../../lib/constants/theme';
 import '../../styles/app.css';
 
 const App = () => {
@@ -28,13 +30,13 @@ const App = () => {
   }
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <HeaderContainer>
          <Title />
         <Headline />
         <Social />
       </HeaderContainer>
-    </>
+    </ThemeProvider>
   );
 };
 
