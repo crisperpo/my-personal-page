@@ -13,9 +13,6 @@ export type PageDataType = {
 }
 
 export interface AppContextType {
-    theme: string;
-    setTheme: (theme: string) => void;
     pageData: PageDataType | null;
-    
     setPageData: React.Dispatch<React.SetStateAction<PageDataType | null>>;
 };
