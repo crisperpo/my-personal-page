@@ -17,6 +17,7 @@ const SocialLink = styled.a`
     text-decoration: none;
 
     &:hover, &:focus {
+        background-color: ${({ theme }) => theme.linkHoverBackground};
         border: 1px solid ${({ theme }) => theme.linkBorderHover};
         color: ${({ theme }) => theme.linkHover};
     }
