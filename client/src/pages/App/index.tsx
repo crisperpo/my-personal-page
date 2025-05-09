@@ -8,15 +8,16 @@ import Social from '../../components/Social/';
 import { HeaderContainer } from './index.styled';
 import { AppContext } from '../../context/AppContext';
 import theme from '../../lib/constants/theme';
+import useDetectDarkModeAndReload from '../../hooks/useDetectDarkModeAndReload';
 import '../../styles/app.css';
 
 const App = () => {
-  const [mode, setMode] = useState('light')
+  const isDarkMode = useDetectDarkModeAndReload();
   const [loading, setLoading] = useState(true);
   const appContext = useContext(AppContext);
   
   const { setPageData } = appContext || {};
-  const currentTheme = theme[mode as keyof typeof theme] || theme.light;
+  const currentTheme = isDarkMode ? theme.dark : theme.light;
 
   useEffect(() => {
     const fetchData = async () => {
