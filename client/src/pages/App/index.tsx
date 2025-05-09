@@ -11,10 +11,12 @@ import theme from '../../lib/constants/theme';
 import '../../styles/app.css';
 
 const App = () => {
+  const [mode, setMode] = useState('light')
   const [loading, setLoading] = useState(true);
   const appContext = useContext(AppContext);
   
   const { setPageData } = appContext || {};
+  const currentTheme = theme[mode as keyof typeof theme] || theme.light;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -30,7 +32,7 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={currentTheme}>
       <HeaderContainer>
          <Title />
         <Headline />
