@@ -28,7 +28,12 @@ vi.mock('styled-components', async () => {
     return {
         ...actual,
         useTheme: () => ({
-            mode: 'dark',
+            background: '#111',
+            link: '#999',
+            linkHover: '#777',
+            linkBorder: '#BBB',
+            linkBorderHover: '#888',
+            text: '#B0B0B0',
             title: {
                 red: '#E21E25',
                 purple: '#7251A2',
