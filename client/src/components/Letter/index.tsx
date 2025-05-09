@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 
-import colors from '../../lib/constants/colors';
 import { LetterContainer } from './index.styled';
-import './index.scss'
+import './index.scss';
+import { useTheme } from 'styled-components';
 
 const Letter = ({ letter, position }: { letter: string, position: number }) => {
     const [isHovered, setIsHovered] = useState(false);
     const letterRef = useRef<HTMLDivElement | null>(null);
+    const theme = useTheme();
     useEffect(() => {
         const handleAnimationEnd = () => {
             setIsHovered(false);
@@ -21,7 +22,7 @@ const Letter = ({ letter, position }: { letter: string, position: number }) => {
             }
         };
     }, []);
-    const colorKeys = Object.values(colors.title);
+    const colorKeys = Object.values(theme.title);
     const color = colorKeys[position % colorKeys.length];
 
     const handleOnHover = () => {

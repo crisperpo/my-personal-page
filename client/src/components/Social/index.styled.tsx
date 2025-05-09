@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import colors from '../../lib/constants/colors';
-
 const SocialContainer = styled.div`
     display: flex;
     gap: 1rem;
@@ -10,8 +8,8 @@ const SocialContainer = styled.div`
 `;
 
 const SocialLink = styled.a`
-    color: ${colors.link};
-    border: 1px solid ${colors.linkBorder};
+    color: ${({ theme }) => theme.link};
+    border: 1px solid ${({ theme }) => theme.linkBorder};
     padding: 0.5rem;
     border-radius: 100%;
     height: 2rem;
@@ -19,8 +17,8 @@ const SocialLink = styled.a`
     text-decoration: none;
 
     &:hover, &:focus {
-        border: 1px solid ${colors.linkBorderHover};
-        color: ${colors.linkHover};
+        border: 1px solid ${({ theme }) => theme.linkBorderHover};
+        color: ${({ theme }) => theme.linkHover};
     }
 `;
 

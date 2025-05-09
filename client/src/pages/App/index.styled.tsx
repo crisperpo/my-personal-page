@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
-import colors from '../../lib/constants/colors';
-
 const HeaderContainer = styled.div`
     align-items: center;
-    color: ${colors.textBody};
+    color: ${({theme}) => theme.text};
     display: flex;
     flex-direction: column;
     gap: 2rem;
