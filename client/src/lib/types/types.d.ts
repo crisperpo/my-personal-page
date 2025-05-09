@@ -1,3 +1,5 @@
+import { theme } from '../constants/theme';
+
 export type SocialNetworksType = {
     label: string;
     icon: string;
@@ -16,3 +18,7 @@ export interface AppContextType {
     pageData: PageDataType | null;
     setPageData: React.Dispatch<React.SetStateAction<PageDataType | null>>;
 };
+
+export type ThemeType = typeof theme;
+
+export type ThemeMode = keyof ThemeType;
