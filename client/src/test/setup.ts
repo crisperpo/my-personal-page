@@ -1,13 +1,10 @@
 import '@testing-library/jest-dom';
-import { expect, vi } from 'vitest';
-import { styleSheetSerializer } from 'jest-styled-components/serializer';
+import { vi } from 'vitest';
 import React from 'react';
 
 import mockContentfulData from './mockContentfulData.json';
 
-expect.addSnapshotSerializer(styleSheetSerializer)
 const { headline, socialNetworks, title } = mockContentfulData;
-
 
 vi.mock('react', async () => {
     const actualReact = await vi.importActual('react');

@@ -2,211 +2,108 @@
 
 exports[`Title Component > matches the snapshot 1`] = `
 <DocumentFragment>
-  .c2 {
-  color: #E21E25;
-  mix-blend-mode: color-burn;
-  transition: top ease 0.1s;
-  transition-delay: 2s;
-  position: relative;
-}
-
-.c2:hovered {
-  animation: emeSZq 3s;
-}
-
-.c3 {
-  color: #7251A2;
-  mix-blend-mode: color-burn;
-  transition: top ease 0.1s;
-  transition-delay: 2s;
-  position: relative;
-}
-
-.c3:hovered {
-  animation: emeSZq 3s;
-}
-
-.c4 {
-  color: #BED431;
-  mix-blend-mode: color-burn;
-  transition: top ease 0.1s;
-  transition-delay: 2s;
-  position: relative;
-}
-
-.c4:hovered {
-  animation: emeSZq 3s;
-}
-
-.c5 {
-  color: #5ECAE6;
-  mix-blend-mode: color-burn;
-  transition: top ease 0.1s;
-  transition-delay: 2s;
-  position: relative;
-}
-
-.c5:hovered {
-  animation: emeSZq 3s;
-}
-
-.c6 {
-  color: #FE4419;
-  mix-blend-mode: color-burn;
-  transition: top ease 0.1s;
-  transition-delay: 2s;
-  position: relative;
-}
-
-.c6:hovered {
-  animation: emeSZq 3s;
-}
-
-.c7 {
-  color: #F6C715;
-  mix-blend-mode: color-burn;
-  transition: top ease 0.1s;
-  transition-delay: 2s;
-  position: relative;
-}
-
-.c7:hovered {
-  animation: emeSZq 3s;
-}
-
-.c8 {
-  color: #F11AA8;
-  mix-blend-mode: color-burn;
-  transition: top ease 0.1s;
-  transition-delay: 2s;
-  position: relative;
-}
-
-.c8:hovered {
-  animation: emeSZq 3s;
-}
-
-.c0 {
-  align-items: center;
-  display: flex;
-  font-family: 'Bebas Neue',sans-serif;
-  flex-flow: column;
-  font-family: 'Bebas Neue',sans-serif;
-  font-size: calc(70px + 9vw);
-  font-style: normal;
-  font-weight: 400;
-  justify-content: center;
-  line-height: calc(30px + 8vw);
-  opacity: 0.7;
-}
-
-.c1 {
-  display: flex;
-  flex-direction: row;
-}
-
-<div
-    class="c0"
+  <div
+    class="sc-gnOvAp ihaXDr"
   >
     <div
-      class="c1"
+      class="sc-dQkurY jNQekc"
     >
       <div
-        class="c2 letter"
+        class="sc-VHjGu dOZwNA letter"
         color="#E21E25"
       >
         C
       </div>
       <div
-        class="c3 letter"
+        class="sc-VHjGu hFbNHm letter"
         color="#7251A2"
       >
         r
       </div>
       <div
-        class="c4 letter"
+        class="sc-VHjGu cAuorJ letter"
         color="#BED431"
       >
         i
       </div>
       <div
-        class="c5 letter"
+        class="sc-VHjGu jBwfFN letter"
         color="#5ECAE6"
       >
         s
       </div>
       <div
-        class="c6 letter"
+        class="sc-VHjGu fcpcnf letter"
         color="#FE4419"
       >
         t
       </div>
       <div
-        class="c7 letter"
+        class="sc-VHjGu fXDXMA letter"
         color="#F6C715"
       >
         i
       </div>
       <div
-        class="c8 letter"
+        class="sc-VHjGu gxdNjy letter"
         color="#F11AA8"
       >
         n
       </div>
       <div
-        class="c2 letter"
+        class="sc-VHjGu dOZwNA letter"
         color="#E21E25"
       >
         a
       </div>
     </div>
     <div
-      class="c1"
+      class="sc-dQkurY jNQekc"
     >
       <div
-        class="c3 letter"
+        class="sc-VHjGu hFbNHm letter"
         color="#7251A2"
       >
         R
       </div>
       <div
-        class="c4 letter"
+        class="sc-VHjGu cAuorJ letter"
         color="#BED431"
       >
         e
       </div>
       <div
-        class="c5 letter"
+        class="sc-VHjGu jBwfFN letter"
         color="#5ECAE6"
       >
         s
       </div>
       <div
-        class="c6 letter"
+        class="sc-VHjGu fcpcnf letter"
         color="#FE4419"
       >
         t
       </div>
       <div
-        class="c7 letter"
+        class="sc-VHjGu fXDXMA letter"
         color="#F6C715"
       >
         r
       </div>
       <div
-        class="c8 letter"
+        class="sc-VHjGu gxdNjy letter"
         color="#F11AA8"
       >
         e
       </div>
       <div
-        class="c2 letter"
+        class="sc-VHjGu dOZwNA letter"
         color="#E21E25"
       >
         p
       </div>
       <div
-        class="c3 letter"
+        class="sc-VHjGu hFbNHm letter"
         color="#7251A2"
       >
         o
