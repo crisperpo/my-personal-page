@@ -1,5 +1,3 @@
-import { theme } from '../constants/theme';
-
 export type SocialNetworksType = {
     label: string;
     icon: string;
