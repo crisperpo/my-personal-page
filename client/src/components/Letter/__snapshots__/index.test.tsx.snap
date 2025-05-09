@@ -2,8 +2,20 @@
 
 exports[`Letter Component > matches the snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="sc-VHjGu dOZwNA letter hovered"
+  .c0 {
+  color: #E21E25;
+  mix-blend-mode: color-burn;
+  transition: top ease 0.1s;
+  transition-delay: 2s;
+  position: relative;
+}
+
+.c0:hovered {
+  animation: emeSZq 3s;
+}
+
+<div
+    class="c0 letter hovered"
     color="#E21E25"
   >
     A

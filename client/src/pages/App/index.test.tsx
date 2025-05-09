@@ -1,12 +1,15 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { act, render } from '@testing-library/react';
-import { vi } from 'vitest';
 
 import App from './index';
 import mockContentfulData from '../../test/mockContentfulData.json';
 
 vi.mock('../../services/fetchHomePageData', () => ({
     default: vi.fn(() => Promise.resolve(mockContentfulData)),
+}));
+vi.mock('../../hooks/useDetectDarkModeAndReload', () => ({
+    __esModule: true,
+    default: vi.fn(() => false),
 }));
 
 describe('App Page', () => {

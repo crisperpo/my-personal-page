@@ -69,6 +69,9 @@ importers:
       husky:
         specifier: ^9.1.7
         version: 9.1.7
+      jest-styled-components:
+        specifier: ^7.2.0
+        version: 7.2.0(styled-components@6.1.16(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
       jsdom:
         specifier: ^26.0.0
         version: 26.0.0
@@ -1439,6 +1442,12 @@ packages:
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
+
+  jest-styled-components@7.2.0:
+    resolution: {integrity: sha512-gwyyveNjvuRA0pyhbQoydXZllLZESs2VuL5fXCabzh0buHPAOUfANtW7n5YMPmdC0sH3VB7h2eUGZ23+tjvaBA==}
+    engines: {node: '>= 12'}
+    peerDependencies:
+      styled-components: '>= 5'
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -3440,6 +3449,11 @@ snapshots:
       is-docker: 2.2.1
 
   isexe@2.0.0: {}
+
+  jest-styled-components@7.2.0(styled-components@6.1.16(react-dom@19.0.0(react@19.0.0))(react@19.0.0)):
+    dependencies:
+      '@adobe/css-tools': 4.4.2
+      styled-components: 6.1.16(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
 
   js-tokens@4.0.0: {}
 

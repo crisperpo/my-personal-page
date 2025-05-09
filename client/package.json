@@ -11,6 +11,7 @@
     "start": "serve -s dist",
     "test": "pnpm --silent test:unit",
     "test:unit": "vitest run --passWithNoTests",
+    "test:update:snapshots": "vitest -u",
     "test:unit:watch": "vitest",
     "prepare": "husky"
   },
@@ -37,6 +38,7 @@
     "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "husky": "^9.1.7",
+    "jest-styled-components": "^7.2.0",
     "jsdom": "^26.0.0",
     "path": "^0.12.7",
     "serve": "^14.2.4",
