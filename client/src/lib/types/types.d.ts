@@ -17,9 +17,30 @@ export type PageDataType = {
 export interface AppContextType {
     pageData: PageDataType | null;
     setPageData: React.Dispatch<React.SetStateAction<PageDataType | null>>;
-    theme: ThemeType;
 };
 
-export type ThemeType = typeof theme;
+type TitleColorsType = {
+    red: string;
+    purple: string;
+    green: string;
+    blue: string;
+    orange: string;
+    yellow: string;
+    pink: string;
+};
 
-export type ThemeMode = keyof ThemeType;
+export type ThemeVariantType = {
+    background: string;
+    link: string;
+    linkHover: string;
+    linkBorder: string;
+    linkBorderHover: string;
+    text: string;
+    title: TitleColorsType;
+};
+
+type ThemeType = {
+    dark: ThemeVariantType;
+    light: ThemeVariantType;
+};
+
