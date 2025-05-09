@@ -10,12 +10,35 @@ export type PageDataType = {
     identifier: string;
     socialNetworks: SocialNetworksType[];
     title: string;
-}
+};
 
 export interface AppContextType {
-    theme: string;
-    setTheme: (theme: string) => void;
     pageData: PageDataType | null;
-    
     setPageData: React.Dispatch<React.SetStateAction<PageDataType | null>>;
 };
+
+type TitleColorsType = {
+    red: string;
+    purple: string;
+    green: string;
+    blue: string;
+    orange: string;
+    yellow: string;
+    pink: string;
+};
+
+export type ThemeVariantType = {
+    background: string;
+    link: string;
+    linkHover: string;
+    linkBorder: string;
+    linkBorderHover: string;
+    text: string;
+    title: TitleColorsType;
+};
+
+type ThemeType = {
+    dark: ThemeVariantType;
+    light: ThemeVariantType;
+};
+

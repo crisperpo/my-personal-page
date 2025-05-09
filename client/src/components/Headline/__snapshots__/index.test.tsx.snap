@@ -2,8 +2,10 @@
 
 exports[`Headline Component > matches the snapshot 1`] = `
 <DocumentFragment>
-  <div>
+  <span
+    class="sc-VHjGu jUhXRN"
+  >
     Web Developer · Open Source Fan · Globe Trotter
-  </div>
+  </span>
 </DocumentFragment>
 `;

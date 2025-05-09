@@ -11,6 +11,7 @@
     "start": "serve -s dist",
     "test": "pnpm --silent test:unit",
     "test:unit": "vitest run --passWithNoTests",
+    "test:update:snapshots": "vitest -u",
     "test:unit:watch": "vitest",
     "prepare": "husky"
   },

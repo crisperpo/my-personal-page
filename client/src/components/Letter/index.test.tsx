@@ -1,7 +1,13 @@
 import Letter from './index';
 import { render, screen } from '@testing-library/react';
 import { vi } from 'vitest';
-import colors from '../../lib/constants/colors';
+
+import themes from '../../lib/constants/theme';
+
+// Mocks
+vi.mock('../../hooks/useTheme', () => ({
+    default: vi.fn().mockReturnValue(themes.light)
+}));
 
 const MOCK_LETTER = 'A';
 
@@ -36,7 +42,7 @@ describe('Letter Component', () => {
     });
     it('should render a div containing the letter with the correct color', () => {
         const MOCK_POSITION = 1;
-        const colorKeys = Object.values(colors.title);
+        const colorKeys = Object.values(themes.light.title);
         const color = colorKeys[MOCK_POSITION % colorKeys.length];
         render(
             <Letter letter={MOCK_LETTER} position={MOCK_POSITION} />

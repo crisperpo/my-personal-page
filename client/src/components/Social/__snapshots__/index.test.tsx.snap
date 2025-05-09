@@ -6,7 +6,7 @@ exports[`Social Component > matches the snapshot 1`] = `
     class="sc-VHjGu kRPcpR"
   >
     <a
-      class="sc-gnOvAp dvWhBs"
+      class="sc-gnOvAp jTIaec"
       href="https://pinterest.com/crisperpo"
       rel="noopener noreferrer"
       target="_blank"
@@ -25,7 +25,7 @@ exports[`Social Component > matches the snapshot 1`] = `
       </svg>
     </a>
     <a
-      class="sc-gnOvAp dvWhBs"
+      class="sc-gnOvAp jTIaec"
       href="https://medium.com/@cristinarestrepo"
       rel="noopener noreferrer"
       target="_blank"
@@ -44,7 +44,7 @@ exports[`Social Component > matches the snapshot 1`] = `
       </svg>
     </a>
     <a
-      class="sc-gnOvAp dvWhBs"
+      class="sc-gnOvAp jTIaec"
       href="https://linkedin.com/in/cristina-restrepo-lopez"
       rel="noopener noreferrer"
       target="_blank"
@@ -63,7 +63,7 @@ exports[`Social Component > matches the snapshot 1`] = `
       </svg>
     </a>
     <a
-      class="sc-gnOvAp dvWhBs"
+      class="sc-gnOvAp jTIaec"
       href="https://github.com/crisperpo"
       rel="noopener noreferrer"
       target="_blank"
@@ -82,7 +82,7 @@ exports[`Social Component > matches the snapshot 1`] = `
       </svg>
     </a>
     <a
-      class="sc-gnOvAp dvWhBs"
+      class="sc-gnOvAp jTIaec"
       href="https://bsky.app/profile/crisperpo.bsky.social"
       rel="noopener noreferrer"
       target="_blank"
