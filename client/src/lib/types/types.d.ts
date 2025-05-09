@@ -12,11 +12,12 @@ export type PageDataType = {
     identifier: string;
     socialNetworks: SocialNetworksType[];
     title: string;
-}
+};
 
 export interface AppContextType {
     pageData: PageDataType | null;
     setPageData: React.Dispatch<React.SetStateAction<PageDataType | null>>;
+    theme: ThemeType;
 };
 
 export type ThemeType = typeof theme;
